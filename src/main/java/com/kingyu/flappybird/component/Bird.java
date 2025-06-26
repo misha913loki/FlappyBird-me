@@ -106,7 +106,7 @@ public class Bird {
             freeFall();
             if (birdCollisionRect.y > BOTTOM_BOUNDARY) {
                 if (state == BIRD_FALL) {
-                    MusicUtil.playCrash();
+                    MusicUtil.playCrashSound();
                 }
                 die();
             }
@@ -123,7 +123,7 @@ public class Bird {
     private void die() {
         counter.saveScore();
         state = BIRD_DEAD;
-        Game.setGameState(Game.STATE_OVER);
+        com.kingyu.flappybird.app.Game.setGameState(com.kingyu.flappybird.app.Game.STATE_OVER);
     }
 
     // 小鸟振翅
@@ -131,7 +131,7 @@ public class Bird {
         if (keyIsReleased()) {
             if (isDead())
                 return;
-            MusicUtil.playFly(); // 播放音效
+            MusicUtil.playFlySound(); // 播放音效
             state = BIRD_UP;
             if (birdCollisionRect.y > Constant.TOP_BAR_HEIGHT) {
                 velocity = ACC_FLAP; // 每次振翅将速度改为上升速度
@@ -151,7 +151,7 @@ public class Bird {
     // 小鸟坠落（已死）
     public void deadBirdFall() {
         state = BIRD_DEAD_FALL;
-        MusicUtil.playCrash(); // 播放音效
+        MusicUtil.playCrashSound(); // 播放音效
         velocity = 0;  // 速度置0，防止小鸟继续上升与水管重叠
     }
 

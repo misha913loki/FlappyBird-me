@@ -1,0 +1,16 @@
+src/main/java/com/kingyu/flappybird/app/Game.java
+src/main/java/com/kingyu/flappybird/app/App.java
+src/main/java/com/kingyu/flappybird/util/Constant.java
+src/main/java/com/kingyu/flappybird/util/GameUtil.java
+src/main/java/com/kingyu/flappybird/util/MusicUtil.java
+src/main/java/com/kingyu/flappybird/component/MovingPipe.java
+src/main/java/com/kingyu/flappybird/component/Bird.java
+src/main/java/com/kingyu/flappybird/component/GameBackground.java
+src/main/java/com/kingyu/flappybird/component/GameOverAnimation.java
+src/main/java/com/kingyu/flappybird/component/Pipe.java
+src/main/java/com/kingyu/flappybird/component/GameElementLayer.java
+src/main/java/com/kingyu/flappybird/component/Cloud.java
+src/main/java/com/kingyu/flappybird/component/WelcomeAnimation.java
+src/main/java/com/kingyu/flappybird/component/PipePool.java
+src/main/java/com/kingyu/flappybird/component/ScoreCounter.java
+src/main/java/com/kingyu/flappybird/component/GameForeground.java

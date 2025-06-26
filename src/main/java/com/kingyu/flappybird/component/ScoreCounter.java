@@ -61,7 +61,7 @@ public class ScoreCounter {
 
 	public void score(Bird bird) {
 		if (!bird.isDead()) {
-			MusicUtil.playScore();
+			MusicUtil.playScoreSound();
 			score += 1;
 		}
 	}

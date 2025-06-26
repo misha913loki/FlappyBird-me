@@ -15,7 +15,7 @@ public class Constant {
 	public static final int FRAME_HEIGHT = 640;
 
 	// 游戏标题
-	public static final String GAME_TITLE = "Flappy Bird written by Kingyu";
+	public static final String GAME_TITLE = "Flappy Bird written by mm";
 
 	// 窗口位置
 	public static final int FRAME_X = 600;

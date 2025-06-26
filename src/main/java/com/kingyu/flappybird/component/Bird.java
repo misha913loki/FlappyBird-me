@@ -141,8 +141,13 @@ public class Bird {
         }
     }
 
-    // 小鸟下降
-    public void birdFall() {
+    /**
+     * 鸟类下落状态设置方法
+     * 如果鸟已经死亡则不会改变状态
+     * 将鸟的状态设置为下落状态
+     */
+    public
+    void birdFall() {
         if (isDead())
             return;
         state = BIRD_FALL;
